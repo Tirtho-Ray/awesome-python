@@ -20,7 +20,15 @@ print("Is Student:", is_student)
 
 
 # Check data types
-print(type(name))
-print(type(age))
-print(type(height))
-print(type(is_student))
+# print(type(name))
+# print(type(age))
+# print(type(height))
+# print(type(is_student))
+
+name = "Trax"
+age = 10
+cGpa = 3.57
+
+print(name)
+print(age)
+print(cGpa)
