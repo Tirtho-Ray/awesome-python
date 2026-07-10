@@ -46,3 +46,45 @@ if year >= 18:
         print("citizen required")
 else:
     print("Too young")
+
+
+money = 200
+if money >= 100 and money <=600:
+    print("worker here")
+
+
+# real world example 
+
+role = "admin"
+if role =="admin" and role =="teacher":
+    print("Your are authentic")
+else:
+    print("unauthorize access")
+
+
+# find the largest number 
+
+a =  int(input("Enter number a :"))
+b =  int(input("Enter then number b:"))
+
+if a == b :
+    print("Tow are same ")
+elif a > b:
+    print("A ia big")
+else:
+    print("A is small")
+
+
+
+# Real time login 
+
+email = str(input("Enter the email: "))
+password  = str(input(" Enter the password: "))
+
+
+if email == "tirthoray10@gmail.com" and password == "T10":
+    print("login successfully")
+else:
+    print("Invalid credential ")
+
+
