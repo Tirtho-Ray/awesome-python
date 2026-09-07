@@ -52,6 +52,7 @@ print(x)
 
 
 # 3. Comparison Operators
+
 # | Operator | Meaning       |
 # | -------- | ------------- |
 # | ==       | Equal         |
