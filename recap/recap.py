@@ -241,4 +241,202 @@ print(grade)
 #<=====================>     <==================>
 # Loops in python
 
+# range(start, stop, step)
+
+# for i in range (1,10):
+#     print(i)
+
+
+# for i in range(10, 0, -1):  // reverse loop
+#     print(i)
+
+# num =[ 10,20,30 ,40]
+
+# for number in num :
+#     print(number)
+
+
+
+
+##  ===> while loop
+
+# i = 0
+# while i <10 :
+#     print(i)
+#     i +=1
+
+
+## ===>  nested loop
+
+# for i in range(1,4) :
+#     for j in range(1,4):
+#         print(i,j)
+
+
+# for i in range(1, 6):
+#     for j in range(i):
+#         print("*", end=" ")
+#     print()
+
+
+# for i in range(1,40):
+#     if i >= 5:
+#         break
+#     print(i)
+
+# for i in range(1,40):
+#     if i == 5:
+#         continue
+#     print(i)
+
+
+
+
+
+# ---------------------------------------------------------------------
+
+# ===---> list  ( array )
+
+# num =[10,20,30,40,50]
+# name =["ray","sam","jisan"]
+# mix =[10,"ray"]
+
+# num.remove(10)  #remove() — Remove by value
+# num.pop(1)      #remove() — Remove by value
+
+# del num[1]
+# # numbers.clear()
+
+# num.sort()
+# num.sort(reverse=True)
+
+
+
+# # Nested List
+# matrix = [[1, 2], [3, 4]]
+
+# fruits = ["Apple", "Banana", "Mango", "Orange"]
+
+# print(fruits[0])   # Apple
+# print(fruits[1])   # Banana
+# print(fruits[-1])  # Orange
+# print(fruits[-2])  # Mango
+
+
+# Method	কাজ
+# append()	End element add one 
+# insert()	Specific index-এ add
+# extend()	Multiple elements add
+
+# fruits.append("Tamato")
+# fruits.insert(1,"Trax")
+# fruits.extend(["Mango", "Orange"])
+
+# # print(num[0])
+
+
+# fruits = ["Apple", "Banana", "Mango"]
+
+# for fruit in fruits:
+#     print(fruit)
+
+
+
+
+
+# ----------------------------------------------------------
+
+# 2. Tuple 
+
+# Empty Tuple
+data = ()
+
+# Tuple with values
+numbers = (10, 20, 30, 40)
+
+# Different data types
+data = (10, "Python", 3.14, True)
+
+# Duplicate values
+numbers = (10, 20, 10, 30)
+
+
+fruits = ("Apple", "Banana", "Mango", "Orange")
+
+print(fruits[0])   # Apple
+print(fruits[2])   # Mango
+print(fruits[-1])  # Orange
+
+
+
+# tuple can not change direct  
+
+numbers = (10, 20, 30)
+temp = list(numbers)
+temp[0] = 100
+numbers = tuple(temp)
+print(numbers)
+# (100, 20, 30)
+
+#Tuple slicing 
+numbers = (10, 20, 30, 40, 50)
+print(numbers[1:4])
+# (20, 30, 40)
+
+languages = ("Python", "Java", "C++")
+
+for language in languages:
+    print(language)
+
+
+student = ("Ray", 21, "CSE", "Bangladesh")
+
+name, age, department, country = student
+
+print(f"Name: {name}")
+print(f"Age: {age}")
+print(f"Department: {department}")
+print(f"Country: {country}")
+
+
+#---------------------------------------------------------- 
+
+# 3. Set ( {} )
+
+# Empty Set
+numbers = set()
+# Set with values
+numbers = {10, 20, 30, 40}
+# Duplicate values
+numbers = {10, 20, 10, 30, 20} # set does not accept duplicated value 
+print(numbers)
+# {10, 20, 30}
+
+# serise  = {2,3,4,4,5,5,6}
+# serise.update([4,6,7,8,])
+
+
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+result = A & B
+print(result)
+# {3, 4}
+
+print(A - B)
+# {1, 2}
+
+print(A ^ B)
+# {1, 2, 5, 6}
+
+
+languages = {"Python", "Java", "C++"}
+
+for language in languages:
+    print(language)
+
+
+
+
+
+
 
