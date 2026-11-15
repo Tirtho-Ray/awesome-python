@@ -447,6 +447,55 @@ student = {
 }
 
 
+# Original Dictionary
+student = {
+    "name": "Ray",
+    "age": 22,
+    "department": "CSE",
+    "cgpa": 3.80
+}
+
+# 1. get() -> Access value
+print(student.get("name"))
+
+# 2. keys() -> Get all keys
+print(student.keys())
+
+# 3. values() -> Get all values
+print(student.values())
+
+# 4. items() -> Get all key-value pairs
+print(student.items())
+
+# 5. update() -> Add or update items
+student.update({"age": 23, "city": "Dhaka"})
+print(student)
+
+# 6. pop() -> Remove specific key
+student.pop("city")
+print(student)
+
+# 7. popitem() -> Remove last inserted item
+student.popitem()
+print(student)
+
+# 8. copy() -> Create shallow copy
+new_student = student.copy()
+print(new_student)
+
+# 9. setdefault() -> Get value or insert default
+student.setdefault("country", "Bangladesh")
+print(student)
+
+# 10. fromkeys() -> Create dictionary from keys
+keys = ["name", "age", "city"]
+new_dict = dict.fromkeys(keys, "Unknown")
+print(new_dict)
+
+# 11. clear() -> Remove all items
+student.clear()
+print(student)
+
 
 
 
