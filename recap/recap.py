@@ -435,6 +435,16 @@ for language in languages:
     print(language)
 
 
+# ===> Dictionary
+my_dict = {}
+
+# Dictionary with data
+student = {
+    "name": "Ray",
+    "age": 22,
+    "department": "CSE",
+    "cgpa": 3.80
+}
 
 
 
