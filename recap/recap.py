@@ -498,4 +498,188 @@ print(student)
 
 
 
+ #============================  File mmanagement  ============
+import os
+import shutil
+from pathlib import Path
+
+# ==================================
+# 1. CREATE FILE
+# ==================================
+
+file = open("example.txt", "w")
+file.write("Hello Python!\n")
+file.close()
+
+# Better way using with
+with open("example.txt", "w") as file:
+    file.write("Python File Management\n")
+
+
+# ==================================
+# 2. READ FILE
+# ==================================
+
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+# Read one line
+with open("example.txt", "r") as file:
+    print(file.readline())
+
+# Read all lines as a list
+with open("example.txt", "r") as file:
+    print(file.readlines())
+
+
+# ==================================
+# 3. APPEND DATA
+# ==================================
+
+with open("example.txt", "a") as file:
+    file.write("New data added!\n")
+
+
+# ==================================
+# 4. WRITE MULTIPLE LINES
+# ==================================
+
+lines = ["Apple\n", "Banana\n", "Mango\n"]
+
+with open("fruits.txt", "w") as file:
+    file.writelines(lines)
+
+
+# ==================================
+# 5. FILE EXISTS CHECK
+# ==================================
+
+print(os.path.exists("example.txt"))
+print(os.path.isfile("example.txt"))
+
+
+# ==================================
+# 6. FILE INFORMATION
+# ==================================
+
+print(os.path.getsize("example.txt"))
+
+
+# ==================================
+# 7. RENAME FILE
+# ==================================
+
+os.rename("example.txt", "new_example.txt")
+
+
+# ==================================
+# 8. COPY FILE
+# ==================================
+
+shutil.copy("new_example.txt", "copy.txt")
+
+
+# ==================================
+# 9. MOVE FILE
+# ==================================
+
+shutil.move("copy.txt", "fruits.txt.copy")
+
+
+# ==================================
+# 10. DELETE FILE
+# ==================================
+
+os.remove("fruits.txt.copy")
+
+
+# ==================================
+# 11. CREATE DIRECTORY
+# ==================================
+
+os.mkdir("my_folder")
+
+
+# ==================================
+# 12. CREATE NESTED DIRECTORY
+# ==================================
+
+os.makedirs("parent/child", exist_ok=True)
+
+
+# ==================================
+# 13. LIST DIRECTORY CONTENTS
+# ==================================
+
+print(os.listdir("."))
+
+
+# ==================================
+# 14. CHECK DIRECTORY
+# ==================================
+
+print(os.path.isdir("my_folder"))
+
+
+# ==================================
+# 15. RENAME DIRECTORY
+# ==================================
+
+os.rename("my_folder", "new_folder")
+
+
+# ==================================
+# 16. COPY DIRECTORY
+# ==================================
+
+shutil.copytree("parent", "parent_backup")
+
+
+# ==================================
+# 17. MOVE DIRECTORY
+# ==================================
+
+shutil.move("parent_backup", "my_backup")
+
+
+# ==================================
+# 18. DELETE DIRECTORY
+# ==================================
+
+os.rmdir("new_folder")  # Empty directory only
+
+shutil.rmtree("my_backup")  # Directory + contents
+
+
+# ==================================
+# 19. PATH MANAGEMENT
+# ==================================
+
+path = Path("new_example.txt")
+
+print(path.name)
+print(path.stem)
+print(path.suffix)
+print(path.parent)
+print(path.exists())
+print(path.is_file())
+
+
+# ==================================
+# 20. CURRENT WORKING DIRECTORY
+# ==================================
+
+print(os.getcwd())
+
+
+# ==================================
+# 21. CHANGE DIRECTORY
+# ==================================
+
+# os.chdir("/home/ray/Documents")
+
+
+
+
 
